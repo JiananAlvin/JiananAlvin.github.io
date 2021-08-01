@@ -122,7 +122,7 @@ comments:
 
   ## Disqus
   disqus:
-    shortname: JiananBlog # the Disqus shortname for the site
+    shortname: jianan-blog # the Disqus shortname for the site
 
 
 ## => Pageview
