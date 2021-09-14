@@ -10,11 +10,11 @@ article_header:
 
 # Test
 
-![image-20210914230739838](C:\Users\19869\AppData\Roaming\Typora\typora-user-images\image-20210914230739838.png)
+![image-20210914230739838](https://raw.githubusercontent.com/JiananAlvin/ImageBed/master/202109142342811.png?token=ATCOSJUBKD375PG43XIMEZTBIELZA)
 
 **hahahah**
 
-hahha 
+hahha Ty
 
 *ahhaah*
 
