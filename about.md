@@ -22,7 +22,7 @@ key: page-about
 </div>
 <div>
     <br><br>Hi, I am Jianan Xu. I am an undergraduate student studying General Engineering(specialization: Computer Science) in the Technical University of Denmark(<a href="https://www.dtu.dk">DTU</a>). This is Jianan's blog, which records my life and study. Enthusiasm for life and thirst for knowlwdge are "nourishment" for my growth, just as sunshine and water are vital for the growth of plants. I will spare no effort to cultivate my "sprout" here, let it grow strong.
-<br><br><br> </div>
+<br><br><br><br> </div>
 
 ## :file_folder: Projects
 
