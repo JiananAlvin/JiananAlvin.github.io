@@ -37,7 +37,7 @@ key: page-about
 
 * **Deep Learning for Autonomous Perception in Visual Guided Navigation** 
 
-  Oct 2021 - Dec 2021
+  Oct. 2021 - Feb. 2022
   
   Python, OpenCV, YOLOv5, Docker, ROS, Ubuntu, NVIDIA Jetson Xavier NX
   
@@ -45,11 +45,15 @@ key: page-about
   
 * **Exploring the applications of AI-based computer vision in digital microfluidic biochips**
 
-  Jan 2022 - Now
+  Jan. 2022 - Now
 
   This research project is headed by DTU Mathematics and Computer Science. This project aims to explore the possible applications of AI-based computer vision in the context of digital microfluidic biochips. This includes the detection of droplets, bubbles, hands, pipettes, shadows, and other visual interference sources. The main tasks are to set up the AI environment/framework, produce the training samples, develop the necessary software infrastructure for video input/output and video pre- and post-processing. Finally, design and run experiments to demonstrate the correct functionality of the developed techniques. 
 
 ## :briefcase: Work experience
+
+* **Smart-up: Muhuaxiao Technology Co., Ltd.**
+  * Building/Training an AI model to generate simple harmony for harmonic dictation.
+  * Assisting back-end development and Android development.
 
 * **New Oriental Education & Technology Group Inc.** - Data Analyst Intern
 
@@ -68,7 +72,7 @@ key: page-about
 
 #### Professional skills
 
-* Programming languages: Python, F#, R, Bash, Java, C++
+* Programming languages: Python, F#, R, Bash, Java, Matlab, C++
 * Operating systems: Ubuntu
 * Embedded development: ROS, Docker
 * Document markup languages: LaTeX, Markdown
