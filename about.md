@@ -76,7 +76,8 @@ key: page-about
 
 ### :trophy: Honors & Awards
 
-<p style="text-align:left;"><b>The Andersen Project Scholarship</b><span style="float:right;">2020</span></p>National Student Union In Denmark (China)
+<p style="text-align:left;"><b>The Andersen Project Scholarship</b><span style="float:right;">2020</span></p>
+<p>National Student Union In Denmark (China)</p>
 
-<p style="text-align:left;"><b>2021 DTU Relay</b> - First Prize <span style="float:right;">2021</span></p>
+<p style="text-align:left;"><b>2021 DTU Relay</b> - First Prize<span style="float:right;">2021</span></p>
 
