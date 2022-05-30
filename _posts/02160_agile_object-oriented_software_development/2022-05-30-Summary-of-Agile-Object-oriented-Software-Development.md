@@ -141,23 +141,23 @@ The Unified Modeling Language is a general-purpose, developmental, modeling lang
 
 1. **Single responsibility principle: A class should only have one reason to change.**
 
-If a class has more than one responsibility, then the responsibilities become coupled. Changes to one responsibility may impair or inhibit the class’ ability to meet the others. Violating the single responsibility principle results in fragile design that can break in unexpected ways.
+   If a class has more than one responsibility, then the responsibilities become coupled. Changes to one responsibility may impair or inhibit the class’ ability to meet the others. Violating the single responsibility principle results in fragile design that can break in unexpected ways.
 
-2. **Open closed principle: Software entities should be open for extension, but closed for modification**.
+2. **Open closed principle: Software entities should be open for extension, but closed for modification**. 
 
-Behavior should be added by adding new code, not by changing the old one. Abstraction through interfaces and abstract classes is key.
+   Behavior should be added by adding new code, not by changing the old one. Abstraction through interfaces and abstract classes is key.
 
 3. **Liskov substitution principle: Derived classes must be substitutable for their base classes.** 
 
-Functions that use pointers or references to base classes must be able to use objects of derived classes without knowing it.
+   Functions that use pointers or references to base classes must be able to use objects of derived classes without knowing it.
 
-4. **Interface Segregation Principle: Make fine grained interfaces that are client specific.**
+4. **Interface Segregation Principle: Make fine grained interfaces that are client specific.** 
 
-It is risky to depend upon "fat" or "polluted" interface, because fat interfaces are not cohesive.
+   It is risky to depend upon "fat" or "polluted" interface, because fat interfaces are not cohesive.
 
-5. **Dependency inversion principle: Depend on abstractions, not on concretions.**
+5. **Dependency inversion principle: Depend on abstractions, not on concretions.** 
 
-High-level code should not depend on low-level code. Both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions.
+   High-level code should not depend on low-level code. Both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions.
 
 ### verification vs. validation
 
