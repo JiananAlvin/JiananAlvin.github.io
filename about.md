@@ -53,7 +53,7 @@ key: page-about
     <li>Assisted in planning and organizing sales activities.</li>
   </ul></p>
 
-### :sparkler: Skills
+### :star: Skills
 
 #### Language skills
 
