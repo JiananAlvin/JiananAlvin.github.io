@@ -288,7 +288,6 @@ To adopt continuous integration you need:
 
 1. A source code repository (the source code repository - Git)
 2. A check-in process (Run all tests and ensure that all of them pass)
-
 3. An automated build process (an automated build tool - Maven)
 4. Willingness to work incrementally (Integrate new code into the system in small chunks)
 
