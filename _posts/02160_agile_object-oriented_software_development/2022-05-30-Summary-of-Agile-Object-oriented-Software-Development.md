@@ -224,14 +224,14 @@ Whenever it is necessary to parametrize a class or a method with respect to the 
 
 For example, define a class containing a homogeneous pair of elements. When we instantiate an object of type `Pair` we are required to specify the generic type.
 
-```Java
+```java
 public class Pair <T> {
 	private T first;
 	private T second;
 }
 ```
 
-```Java
+```java
 Pair<Integer> pInt = new Pair<Integer>(42, 21);
 Pair<String> pStr = new Pair<String>("Alice", "Bob");
 ```
