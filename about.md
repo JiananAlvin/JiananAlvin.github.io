@@ -38,6 +38,12 @@ key: page-about
   <p><code>Python</code>, <code>OpenCV</code>, <code>YOLOv3</code>, <code>C++</code>, <code>MQTT</code>, <code>Raspberry Pi 4B</code>
   <p>This research project headed by Nanjing Institute of Technology, School of Computer Engineering. This project aimed to combine lidar, infrared IR sensor and computer vision to detect potential risks in front of the car in real time while driving, and guides the car to take certain actions when encountering danger. This includes car model and software implementation. Three parts are implemented for the system - car controller, detection server, and an extensible collision avoidance system. </p>
 
+## :newspaper: Publication
+
+* <p style="text-align:left;"><b>Depth-based Deep Learning for Manhole Detection in UAV Navigation</b><span style="float:right;">Jun. 2022</span></p>
+  <p>Conference: IEEE IST</p>
+  <p>In this paper we propose using a deep learning model to detect manholes relying only on a depth image. We investigate different sizes of networks in an attempt to provide an adequate accuracy while maintain a low computational load, suitable for drone implementation on a parallel processing co-processor.</p>
+
 ### :briefcase: Work experience
 
 * <p style="text-align:left;"><b>Smart-up: Muhuaxiao Technology Co., Ltd.</b> - AI & Back-end Developer<span style="float:right;">Aug 2021 - Now</span></p>
@@ -65,7 +71,7 @@ key: page-about
 #### Professional skills
 
 <p><ul>
-  <li>Programming languages: Python, F#, R, Bash, Java, MATLAB, Julia</li>
+  <li>Programming languages: Python, Java, C, F#, R, Bash, MATLAB, Julia, Assembly language</li>
   <li>Operating systems: Ubuntu</li>
   <li>Embedded development: ROS, Docker</li>
   <li>Document markup languages: LaTeX, Markdown</li>
@@ -73,6 +79,7 @@ key: page-about
   <li>Multiphysics simulation: COMSOL</li>
   <li>CAD modelling: Fusion360, Inventor</li>
 </ul></p>
+
 
 ### :trophy: Honors & Awards
 
