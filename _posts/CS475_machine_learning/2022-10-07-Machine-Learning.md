@@ -216,8 +216,6 @@ What this algorithm does is that it builds a model and gives equal weights to al
    $$
    Total\;error = \frac{\#\;wrong\;output}{\#\;total\;samples}
    $$
-   
-   
    The Amount of Say/Performance of the stump will be:
    
    
@@ -236,7 +234,7 @@ What this algorithm does is that it builds a model and gives equal weights to al
 
 5. Output of the final hypothesis:
    
-5. 
+   
    $$
    H(x)=sign(\sum_{t=1}^{T}\alpha_t h_t(x))
    $$
