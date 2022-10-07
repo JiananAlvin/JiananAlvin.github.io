@@ -46,7 +46,7 @@ key: page-about
 
 ### :briefcase: Work experience
 
-* <p style="text-align:left;"><b>Smart-up: Muhuaxiao Technology Co., Ltd.</b> - AI & Back-end Developer<span style="float:right;">Aug 2021 - Now</span></p>
+* <p style="text-align:left;"><b>Start-up: Muhuaxiao Technology Co., Ltd.</b> - AI & Back-end Developer<span style="float:right;">Aug 2021 - Now</span></p>
   <p><ul>
     <li>Building/Training an AI model to generate simple harmony for harmonic dictation.</li>
     <li>Assisting back-end development and Android development.</li>
