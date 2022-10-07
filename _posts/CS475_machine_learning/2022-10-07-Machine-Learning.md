@@ -29,6 +29,8 @@ In the case of Linear Regression, we calculate this error (residual) by using th
 $$
 L=\frac{1}{n}\sum(y-\hat{y})^2
 $$
+
+
 To achieve the best-fitted line, we have to minimize the value of the loss function using **gradient descent**.
 
 * **Logistic Regression** is another supervised Machine Learning algorithm that helps fundamentally in binary classification (separating discreet values).
@@ -43,6 +45,8 @@ The equation of **sigmoid**:
 $$
 S(x)=\frac{1}{1+e^x} \rightarrow S(\hat{y})=\frac{1}{1+e^\hat{y}}
 $$
+
+
 Finally, the output value of the sigmoid function gets converted into 0 or 1(discreet values) based on the threshold value. We usually set the threshold value as 0.5. In this way, we get the binary classification.
 
 The method for calculating loss function for logistic regression it is maximum **likelihood estimation**.
@@ -90,6 +94,8 @@ $$
 \underset{\mathbf{w}}{min}\hspace{4mm} \frac{1}{2}||\mathbf{w}||^2 + C\sum_{i=1}^{n} \xi_{i}\\
 such\;that\hspace{4mm}(\mathbf{w}\mathbf{x}_i)\mathbf{y}_i + \xi_{i} \geq 1,\; \xi_{i}\geq 0\hspace{4mm} \forall i
 $$
+
+
 
 $\sum_{i=1}^{n} \xi_{i}$ is # of mistakes. $\xi{i}$ is called slack variables. The value of $\xi_i$ is the distance of $\mathbf{x}_i$ from the *corresponding class’s margin* if  $\mathbf{x}_i$ is on the wrong side of the margin, otherwise zero. Thus the points that are far away from the margin on the wrong side would get more penalty. We want these $\xi{i}$ to be small. $C$ s a hyperparameter that decides the trade-off between maximizing the margin and minimizing the mistakes. <span style="color:blue">When $C$ is small, we can tolerate more mistakes, and may introduce more bias that implies underfitting. And focus is more on maximazing the margin. Whereas, when $C$ is large, we can tolerate less mistakes, and may have less bias that implies overfitting. And focus is more on avoiding misclassification at the expense of keeping the margin small.</span> 
 
@@ -141,6 +147,8 @@ The core algorithm for building decision trees called **ID3**, which is a top-do
 $$
 E = -\sum_{i=1}^{c}p_ilog(p_i)\hspace{10mm}or\hspace{10mm}H(X)=-\sum_{x\in X}p(x)log(p(x))
 $$
+
+
 $p_i$ is the probability of randomly selecting an example in class $i$.
 
 2. **Conditional Entropy**
@@ -153,6 +161,7 @@ $p_i$ is the probability of randomly selecting an example in class $i$.
    = -\sum_{x\in X}p(x)\sum_{y\in Y}P(y|x)log(p(y|x))
    $$
    
+   
 3. **Information Gain (IG)**
 
    **Information gain** measures the reduction in entropy by splitting a dataset according to a given value of a random variable. Information gain helps us determine the quality of splitting. <span style="color:blue">The more the entropy removed, the greater the information gain. The higher the information gain, the better the split.</span> Maximizing information gain is equivalent to choosing features that minimize the conditional entropy. Because our feature choice doesn't affect $H(Y)$, so it is really just an additive constant.
@@ -162,6 +171,8 @@ $p_i$ is the probability of randomly selecting an example in class $i$.
 $$
 IG=E_{parent}-E_{children}\hspace{10mm}or\hspace{10mm}IG(Y|X) = H(Y) - H(Y|X)
 $$
+
+
 
 where $E_{parent}$ (before splitting) is the entropy of the parent node and $E_{children}$ (after splitting) is the average entropy of the child nodes. Let’s use [an example](https://www.section.io/engineering-education/entropy-information-gain-machine-learning/) to visualize information gain and its calculation.
 
@@ -205,19 +216,22 @@ What this algorithm does is that it builds a model and gives equal weights to al
 
 1.  First of all these data points will be assigned some weights. Initially, all the weights will be equal.
    
-1.  
+   
    $$
    D_1(i) = \frac{1}{N},\hspace{3mm}N\;is \;the\;total\;\#\;of\;datapoints
    $$
-
+   
+   
 2. Calculate the **Amount of Say/Importance/Influence** and **Total error** to update the previous sample weights.
    
-2. 
+   
    $$
    Total\;error = \frac{\#\;wrong\;output}{\#\;total\;samples}
    $$
-   The Amount of Say/Performance of the stump will be:
    
+   
+   The Amount of Say/Performance of the stump will be:
+
    
    $$
    \alpha_t=\frac{1}{2}ln(\frac{1-\varepsilon_t}{\varepsilon_t})
@@ -238,4 +252,6 @@ What this algorithm does is that it builds a model and gives equal weights to al
    $$
    H(x)=sign(\sum_{t=1}^{T}\alpha_t h_t(x))
    $$
+   
+   
    where $\alpha_t$ is the Amount of Say and $h_t(x)$ is the actual label.
