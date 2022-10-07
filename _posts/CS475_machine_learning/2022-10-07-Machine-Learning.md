@@ -1,9 +1,9 @@
-```yml
-title: Summary of Machine Learning
-tags: Machine Learning 
+---
+title: Machine Learning
+tags: ML
 article_header:
   type: cover
-```
+---
 
 ## Regularization
 
@@ -83,7 +83,7 @@ $$
 such\;that\hspace{4mm}(\mathbf{w}\mathbf{x}_i)\mathbf{y}_i + \xi_{i} \geq 1,\; \xi_{i}\geq 0\hspace{4mm} \forall i
 $$
 
-$\sum_{i=1}^{n} \xi_{i}$ is # of mistakes. $\xi{i}$ is called slack variables. The value of $\xi_i$ is the distance of $\mathbf{x}_i$ from the *corresponding class’s margin* if  $\mathbf{x}_i$ is on the wrong side of the margin, otherwise zero. Thus the points that are far away from the margin on the wrong side would get more penalty. We want these $\xi{i}$ to be small. $C$ s a hyperparameter that decides the trade-off between maximizing the margin and minimizing the mistakes. <span style="color:blue">When $C$ is small, we can tolerate more mistakes, and may introduce more bias that implies underfitting. And focus is more on maximazing the margin. Whereas, when $C$ is large, we can tolerate less mistakes, and may have less bias that implies overfitting. And focus is more on avoiding misclassification at the expense of keeping the margin small.</span> 
+$\sum_{i=1}^{n} \xi_{i}$ is # of mistakes. $\xi{i}$ is called slack variables. The value of $\xi_i$ is the distance of $\mathbf{x}_i$ from the *corresponding class’s margin* if  $\mathbf{x}_i$ is on the wrong side of the margin, otherwise zero. Thus the points that are far away from the margin on the wrong side would get more penalty. We want these $\xi{i}$ to be small. $C$ s a hyperparameter that decides the trade-off between maximizing the margin and minimizing the mistakes. <span style="color:blue">When $C$ is small, we can tolerate more mistakes, and may introduce more bias that implies underfitting. And focus is more on maximazing the margin. Whereas, when $C$ is large, we can tolerate less mistakes, and may have less bias that implies overfitting. And focus is more on avoiding misclassification at the expense of keeping the margin small.</span> 
 
 ### Kernel Tricks
 
@@ -103,7 +103,7 @@ $$
 
 In conclusion,
 
-<span style="color:blue">↑ $\gamma$ , use similarity intensely, ↑ variance, overfitting.</span>
+<span style="color:blue">↑ $\gamma$ , use similarity intensely, ↑ variance, overfitting.</span>
 
 <span style="color:blue">↓ $\gamma$ , NOT use similarity intensely, ↑ bias, underfitting.</span>
 
@@ -169,7 +169,7 @@ Select the $K$ features that give us the most information about the label $Y$.
 
 Random Forest is a collection of trees with randomly selected features. It's extremely robust to overfitting  in practice. Individual tree learning (overfitting) matters much less. Drawback: doesn't work well when only a few features are helpful.
 
-<span style="color:blue">↑ $\#Trees$, ↑ prediction, ↑ slower, ↓ overfitting.</span> 
+<span style="color:blue">↑ $\#Trees$, ↑ prediction, ↑ slower, ↓ overfitting.</span> 
 
 <span style="color:blue">↓ $\#Trees$, ↑ faster, ↑ overfitting.</span> 
 
