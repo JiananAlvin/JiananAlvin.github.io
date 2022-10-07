@@ -1,9 +1,11 @@
-```
+---
 title: Summary of Machine Learning
 tags: Machine Learning 
 article_header:
   type: cover
-```
+---
+
+
 
 ## Regularization
 
