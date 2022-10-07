@@ -1,4 +1,4 @@
-```
+```yml
 title: Summary of Machine Learning
 tags: Machine Learning 
 article_header:
@@ -7,11 +7,11 @@ article_header:
 
 ## Regularization
 
-![image-20221005150525887](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210071735175.png)
+![image-20221005150525887](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210071739312.png)
 
 ### L2 Ridge Regression vs. L1 Lasso Regression
 
-![image-20221007131819637](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210071735424.png)
+![image-20221007131819637](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210071739735.png)
 
 
 
@@ -65,7 +65,7 @@ where *y* is class label +1 or -1, and $f(\mathbf{x}) = \mathbf{w}\mathbf{x}$ is
 $$
 \ell(\mathbf{w},\mathbf{x},\mathbf{y}) = max (0, 1-\mathbf{y}[\mathbf{w}\cdot \mathbf{x}])
 $$
-![image-20221006185515524](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210071735126.png)
+![image-20221006185515524](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210071739478.png)
 
 
 
@@ -93,13 +93,13 @@ A Kernel function can be written mathematically as follows:
 $$
 K(\mathbf{x}, \mathbf{y}) = <\phi(\mathbf{x}), \phi(\mathbf{y})>
 $$
-![image-20221006212206032](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210071735738.png)
+![image-20221006212206032](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210071739064.png)
 
 * **Gaussian/RBF Kernel**
 
   $\gamma$ sets the width of the bell shaped curve. <span style="color:blue">↑ $\gamma$ , narrower bell.</span>
 
-![image-20221007010106972](C:\Users\19869\AppData\Roaming\Typora\typora-user-images\image-20221007010106972.png)
+![image-20221007010106972](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210071739372.png)
 
 In conclusion,
 
@@ -155,7 +155,7 @@ Note: Very often [greedy algorithms](https://www.youtube.com/watch?v=HzeK7g8cD0Y
 
 **Mutual information** is calculated between two variables and measures the reduction in uncertainty for one variable given a known value of the other variable.
 
-![image-20221007081647800](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210071735678.png)
+![image-20221007081647800](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210071739862.png)
 
 ### Feature selection
 
@@ -200,11 +200,11 @@ What this algorithm does is that it builds a model and gives equal weights to al
    $$
    \alpha_t=\frac{1}{2}ln(\frac{1-\varepsilon_t}{\varepsilon_t})
    $$
-   ![image-20221007114213567](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210071735921.png)
+   ![image-20221007114213567](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210071739063.png)
 
 3.  Update the weights. The wrong predictions will be given more weight whereas the correct predictions weights will be decreased.
 
-   ![image-20221007114403347](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210071735474.png)
+   ![image-20221007114403347](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210071739085.png)
 
 <span style="color:blue">The amount of say ($\alpha$) will be ***negative*** when the sample is **correctly classified**. The amount of say ($\alpha$) will be ***positive*** when the sample is **miss-classified.**</span>
 
