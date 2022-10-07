@@ -1,3 +1,8 @@
+title: Summary of Machine Learning
+tags: Machine Learning 
+article_header:
+  type: cover
+
 ## Regularization
 
 ![image-20221005150525887](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210051505050.png)
@@ -132,7 +137,6 @@ $p_i$ is the probability of randomly selecting an example in class $i$.
    = -\sum_{x\in X}p(x)\sum_{y\in Y}P(y|x)log(p(y|x))
    $$
    
-
 3. **Information Gain (IG)**
 
    **Information gain** measures the reduction in entropy by splitting a dataset according to a given value of a random variable. Information gain helps us determine the quality of splitting. <span style="color:blue">The more the entropy removed, the greater the information gain. The higher the information gain, the better the split.</span> Maximizing information gain is equivalent to choosing features that minimize the conditional entropy. Because our feature choice doesn't affect $H(Y)$, so it is really just an additive constant.
