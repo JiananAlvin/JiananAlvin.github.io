@@ -1,15 +1,17 @@
+```
 title: Summary of Machine Learning
 tags: Machine Learning 
 article_header:
   type: cover
+```
 
 ## Regularization
 
-![image-20221005150525887](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210051505050.png)
+![image-20221005150525887](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210071735175.png)
 
 ### L2 Ridge Regression vs. L1 Lasso Regression
 
-![image-20221007131819637](C:\Users\19869\AppData\Roaming\Typora\typora-user-images\image-20221007131819637.png)
+![image-20221007131819637](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210071735424.png)
 
 
 
@@ -57,13 +59,13 @@ In SVM, we take the output of the linear function and if that output is greater 
 
 The loss function that helps maximize the margin is hinge loss:
 
-![image-20221006182041514](C:\Users\19869\AppData\Roaming\Typora\typora-user-images\image-20221006182041514.png)
+![image-20221006182041514](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210071735696.png)
 
 where *y* is class label +1 or -1, and $f(\mathbf{x}) = \mathbf{w}\mathbf{x}$ is predicted value. For example, If a classification is correct $\mathbf{w}\mathbf{x} \geq 1$ for label $\mathbf{y}=1$, then $\mathbf{y}[\mathbf{w}\mathbf{x}] \geq 1$.  In this case there is no error (i.e. loss = 0). ↑ $\mathbf{y}[\mathbf{w}\mathbf{x}]$ , ↑ true. If classification is wrong $\mathbf{w}\mathbf{x} < 1$ for label $\mathbf{y}=1$, then y[wx] < 1. In this case, ↓ $\mathbf{y}[\mathbf{w}\mathbf{x}]$, ↑ loss. Thus, we can represent **hinge loss** function as
 $$
 \ell(\mathbf{w},\mathbf{x},\mathbf{y}) = max (0, 1-\mathbf{y}[\mathbf{w}\cdot \mathbf{x}])
 $$
-![image-20221006185515524](C:\Users\19869\AppData\Roaming\Typora\typora-user-images\image-20221006185515524.png)
+![image-20221006185515524](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210071735126.png)
 
 
 
@@ -91,7 +93,7 @@ A Kernel function can be written mathematically as follows:
 $$
 K(\mathbf{x}, \mathbf{y}) = <\phi(\mathbf{x}), \phi(\mathbf{y})>
 $$
-![image-20221006212206032](C:\Users\19869\AppData\Roaming\Typora\typora-user-images\image-20221006212206032.png)
+![image-20221006212206032](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210071735738.png)
 
 * **Gaussian/RBF Kernel**
 
@@ -153,7 +155,7 @@ Note: Very often [greedy algorithms](https://www.youtube.com/watch?v=HzeK7g8cD0Y
 
 **Mutual information** is calculated between two variables and measures the reduction in uncertainty for one variable given a known value of the other variable.
 
-![image-20221007081647800](C:\Users\19869\AppData\Roaming\Typora\typora-user-images\image-20221007081647800.png)
+![image-20221007081647800](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210071735678.png)
 
 ### Feature selection
 
@@ -198,11 +200,11 @@ What this algorithm does is that it builds a model and gives equal weights to al
    $$
    \alpha_t=\frac{1}{2}ln(\frac{1-\varepsilon_t}{\varepsilon_t})
    $$
-   ![image-20221007114213567](C:\Users\19869\AppData\Roaming\Typora\typora-user-images\image-20221007114213567.png)
+   ![image-20221007114213567](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210071735921.png)
 
 3.  Update the weights. The wrong predictions will be given more weight whereas the correct predictions weights will be decreased.
 
-   ![image-20221007114403347](C:\Users\19869\AppData\Roaming\Typora\typora-user-images\image-20221007114403347.png)
+   ![image-20221007114403347](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210071735474.png)
 
 <span style="color:blue">The amount of say ($\alpha$) will be ***negative*** when the sample is **correctly classified**. The amount of say ($\alpha$) will be ***positive*** when the sample is **miss-classified.**</span>
 
