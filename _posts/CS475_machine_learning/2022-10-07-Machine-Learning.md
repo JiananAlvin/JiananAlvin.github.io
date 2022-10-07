@@ -196,12 +196,14 @@ What this algorithm does is that it builds a model and gives equal weights to al
    $$
    Total\;error = \frac{\#\;wrong\;output}{\#\;total\;samples}
    $$
+   
+   
    The Amount of Say/Performance of the stump will be:
    $$
    \alpha_t=\frac{1}{2}ln(\frac{1-\varepsilon_t}{\varepsilon_t})
    $$
    ![image-20221007114213567](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210071739063.png)
-
+   
 3.  Update the weights. The wrong predictions will be given more weight whereas the correct predictions weights will be decreased.
 
    ![image-20221007114403347](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210071739085.png)
