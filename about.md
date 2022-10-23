@@ -71,7 +71,7 @@ key: page-about
 #### Professional skills
 
 <p><ul>
-  <li>Programming languages: Python, Java, C, F#, R, Bash, MATLAB, Julia, Assembly language</li>
+  <li>Programming languages: Python, Java, C, SQL, F#, R, Bash, MATLAB, Julia, Assembly language</li>
   <li>Operating systems: Ubuntu</li>
   <li>Embedded development: ROS, Docker</li>
   <li>Document markup languages: LaTeX, Markdown</li>
