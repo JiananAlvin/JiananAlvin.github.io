@@ -11,7 +11,7 @@ article_header:
 
 ## Frenquently Used Commands
 
-```
+```git
 1) git pull 
 >>>> Modifying project
 
@@ -25,6 +25,8 @@ article_header:
 ## Git Cheat Sheet
 
 ![img](https://www.runoob.com/wp-content/uploads/2015/02/011500266295799.jpg)
+
+
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
