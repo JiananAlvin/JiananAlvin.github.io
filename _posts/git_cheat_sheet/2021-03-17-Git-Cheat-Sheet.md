@@ -11,7 +11,7 @@ article_header:
 
 ## Frenquently Used Commands
 
-```git
+```Git
 1) git pull 
 >>>> Modifying project
 
