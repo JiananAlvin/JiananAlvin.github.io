@@ -1,6 +1,6 @@
 ---
 title: Cyber Systems & Computer Networks
-tags: Computer-Networks; Cyber-Systems
+tags: Computer_Networks Cyber_Systems
 article_header:
   type: c
 ---
