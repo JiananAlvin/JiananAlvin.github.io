@@ -17,7 +17,7 @@ This is my notes on simplified version of slides from DTU course [02135 Introduc
 
 ###### 2. Abstract FSMD model -- Page 10 - 17
 
-###### 3. Compilation pipeline and -- Page 18 - 19
+###### 3. Compilation pipeline -- Page 18 - 19
 
 ###### 4. Single-purpose processor -- Page 20 - 24
 
