@@ -9,9 +9,15 @@ article_header:
 
 ![image-20221005150525887](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210071739312.png)
 
-### L2 Ridge Regression vs. L1 Lasso Regression
+### L2 Ridge Regression vs. L1 Lasso Regression vs. Ordinary least squares linear regression
 
-![image-20221007131819637](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210071739735.png)
+When would you want to use (i) Ridge regression, (ii) Lasso regression, (iii) Ordinary least squares linear regression?
+
+(i) When we have many predictors, we want to shrink the coefficients of the low variance components of the input vector $\mathbf{x}$. Same as weight decay, the $L2$ ridge penalty is $\sum^{p}_1 \beta^2_j$.
+
+(ii) When there are many correlated variables in a linear regression model, their coefficients can become poorly determined and exhibit high variance. The $L1$ lasso penalty $\sum^{p}_1 \vert \beta_j \vert$ pushes coefficients to 0 (and each other).
+
+(iii) When $\hat{f}$ has low variance, since if bias is low and variance high we may have low prediction accuracy. And when we have a small number of predictors, otherwise we may want to find a smaller subset that have the strongest effects.
 
 
 
@@ -50,10 +56,6 @@ $$
 Finally, the output value of the sigmoid function gets converted into 0 or 1(discreet values) based on the threshold value. We usually set the threshold value as 0.5. In this way, we get the binary classification.
 
 The method for calculating loss function for logistic regression it is maximum **likelihood estimation**.
-
-
-
-### MIN MSE vs. MAX Likelihood Estimation
 
 
 
@@ -154,14 +156,14 @@ $p_i$ is the probability of randomly selecting an example in class $i$.
 2. **Conditional Entropy**
 
     **conditional entropy** quantifies the amount of information needed to describe the outcome of a random variable $Y$ given that the value of another random variable $X$ is known. The conditional entropy of $Y$ given $X$ is defined as
-   
-   
-   $$
+
+
+$$
    H(Y|X)=-\sum_{x\in X}p(x)log(H(Y|X=x))
    = -\sum_{x\in X}p(x)\sum_{y\in Y}P(y|x)log(p(y|x))
-   $$
-   
-   
+$$
+
+
 3. **Information Gain (IG)**
 
    **Information gain** measures the reduction in entropy by splitting a dataset according to a given value of a random variable. Information gain helps us determine the quality of splitting. <span style="color:blue">The more the entropy removed, the greater the information gain. The higher the information gain, the better the split.</span> Maximizing information gain is equivalent to choosing features that minimize the conditional entropy. Because our feature choice doesn't affect $H(Y)$, so it is really just an additive constant.
@@ -215,13 +217,13 @@ Random Forest is a collection of trees with randomly selected features. It's ext
 What this algorithm does is that it builds a model and gives equal weights to all the data points. It then assigns higher weights to points that are wrongly classified. Now all the points which have higher weights are given more importance in the next model. It will keep training models until and unless a lowe error is received.
 
 1.  First of all these data points will be assigned some weights. Initially, all the weights will be equal.
-   
-   
-   $$
+
+
+$$
    D_1(i) = \frac{1}{N},\hspace{3mm}N\;is \;the\;total\;\#\;of\;datapoints
-   $$
-   
-   
+$$
+
+
 2. Calculate the **Amount of Say/Importance/Influence** and **Total error** to update the previous sample weights.
    
    
