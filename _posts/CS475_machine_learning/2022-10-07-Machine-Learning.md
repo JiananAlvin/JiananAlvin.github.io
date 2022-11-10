@@ -5,13 +5,17 @@ article_header:
   type: cover
 ---
 
-## Regularization
+## Regression
+
+### Regularization
+
+**Regularization** refers to techniques that are used to calibrate machine learning models in order to minimize the adjusted loss function and prevent overfitting or underfitting.
 
 ![image-20221005150525887](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202210071739312.png)
 
 ### L2 Ridge Regression vs. L1 Lasso Regression vs. Ordinary least squares linear regression
 
-When would you want to use (i) Ridge regression, (ii) Lasso regression, (iii) Ordinary least squares linear regression?
+When would you want to use (i) **Ridge regression**, (ii) **Lasso regression**, (iii) **Ordinary least squares linear regression**?
 
 (i) When we have many predictors, we want to shrink the coefficients of the low variance components of the input vector $\mathbf{x}$. Same as weight decay, the $L2$ ridge penalty is $\sum^{p}_1 \beta^2_j$.
 
@@ -19,9 +23,7 @@ When would you want to use (i) Ridge regression, (ii) Lasso regression, (iii) Or
 
 (iii) When $\hat{f}$ has low variance, since if bias is low and variance high we may have low prediction accuracy. And when we have a small number of predictors, otherwise we may want to find a smaller subset that have the strongest effects.
 
-
-
-## Linear Regression vs. Logistics regression
+### Linear Regression vs. Logistics regression
 
 [reference](https://www.analyticsvidhya.com/blog/2020/12/beginners-take-how-logistic-regression-is-related-to-linear-regression/#:~:text=The%20Differences%20between%20Linear%20Regression,Logistic%20regression%20provides%20discreet%20output.)
 
@@ -194,7 +196,7 @@ Select the $K$ features that give us the most information about the label $Y$.
 
 <span style="color:blue">↑ $K$, ↑ variance, overfitting.$\hspace{5mm}\longleftarrow$ Complete trees have no bias</span>
 
-## Random Forests
+### Random Forests
 
 Random Forest is a collection of trees with randomly selected features. It's extremely robust to overfitting  in practice. Individual tree learning (overfitting) matters much less. Drawback: doesn't work well when only a few features are helpful.
 
