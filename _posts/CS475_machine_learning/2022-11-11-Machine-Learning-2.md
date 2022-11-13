@@ -27,9 +27,9 @@ Calculate the gradient of our loss function:
 <img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202211130015426.png" alt="image-20221110104212753" style="zoom: 50%;" />
 
 **We are only updating the parameters when we are wrong.** Update rule:
-$w^{i+1} = w^i + \eta \partial L_w(y_i)$
-$w^{i+1} = w^i + \eta (y_i - \hat{y}_i)x_i$, where $\hat{y}_i$ = sign($w \cdot x_i$)
-$w^{i+1} = w^i + \eta y_i x_i$
+$w^{i+1} = w^i + \eta \partial L_w(y_i) \\$
+$w^{i+1} = w^i + \eta (y_i - \hat{y}_i)x_i$, where $\hat{y}_i$ = sign($w \cdot x_i$) $\\$
+$w^{i+1} = w^i + \eta y_i x_i \\$
 Set $\eta$ = 1. If mistake on a positive example $w^{i+1} = w^i + x_i$. If mistake on a negative example $w^{i+1} = w^i - x_i$.
 
 <img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202211130015252.png" alt="image-20221110103210389" style="zoom: 67%;" />
@@ -47,9 +47,9 @@ For perceptron learning, <span style="color:blue">Bach size ↑, closer to regul
 
 ### Smooth Oscillating Behavior of Perceptron Out
 
-Solution: take the best model over time. A model that was good on many examples should be trusted more than the latest model.
-Two practical ways:
-(1) **Voting**: Save all the $\mathbf{w}$'s along the way and predict by voting.
+Solution: take the best model over time. A model that was good on many examples should be trusted more than the latest model. $\\$
+Two practical ways: $\\$
+(1) **Voting**: Save all the $\mathbf{w}$'s along the way and predict by voting. $\\$
 (2) **Averaging**: Take the average of $\mathbf{w}$.
 
 ### Online Learning
@@ -69,8 +69,8 @@ Multilayer Perceptron is the foundation of **neural networks**.  The power of th
 ### Activation Function
 
 The **activation function** should:
-(1) Ensures not linearity.
-(2) Ensure gradients remain large through the hidden unit.
+(1) Ensures not linearity. $\\$
+(2) Ensure gradients remain large through the hidden unit. $\\$
 (3) Be differentiable. 
 
 ### Network Structure
@@ -109,7 +109,7 @@ Traditional neural network could not use previous information to predict the fut
 
 ### RNN Language Models
 
-RNNs never forget.
+RNNs never forget. $\\$
 Algorithm: Sample a sequence from the probability distribution defined by the RNN. Train the RNN to minimize cross entropy (aka Maximum likelihood estimation).
 
 ### Vanishing Gradients
@@ -124,16 +124,16 @@ Solutions for vanishing gradients.
 #### Long short-term memories (LSTMs)
 
 1. **Forget gate ($f_t$)**: decides what information we’re going to throw away from the cell state. It looks at $h_{t−1}$and $x_t$, and outputs a number between $0$ and $1$ for each number in the cell state $C_{t-1}$.  (red part)
-    <img src="C:\Users\19869\AppData\Roaming\Typora\typora-user-images\image-20221111095639857.png" alt="image-20221111095639857" style="zoom: 67%;" />
+    <img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202211130034301.png" alt="image-20221111095639857" style="zoom: 67%;" />
 2. **Input gate ($i_t$)**: decides how much to update each state value.
    **tanh**: creates a vector of new candidate values.
    (blue part)
-   <img src="C:\Users\19869\AppData\Roaming\Typora\typora-user-images\image-20221111100315644.png" alt="image-20221111100315644" style="zoom:67%;" />
+   <img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202211130034153.png" alt="image-20221111100315644" style="zoom:67%;" />
 
 3. **Output gate ($o_t$)**: decides what parts of the cell state we’re going to output.
    **tanh**: pushes the values to be between $−1$ and $1$. 
    (orange part)
-   <img src="C:\Users\19869\AppData\Roaming\Typora\typora-user-images\image-20221111101036109.png" alt="image-20221111101036109" style="zoom:67%;" />
+   <img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202211130034384.png" alt="image-20221111101036109" style="zoom:67%;" />
 
 **Summary**:
 
@@ -169,16 +169,16 @@ Rather than use $h_4$ to do the prediction, take the average of all the edges.
 
 * **Hard Attention**: 
 
-  (1) First, learn a query representation.
-  (2) Then pick which pieces of the sequence to include, then answer query based on those pieces.
-  pros: fast, prediction only uses important pieces.
+  (1) First, learn a query representation.  $\\$
+  (2) Then pick which pieces of the sequence to include, then answer query based on those pieces.  $\\$
+  pros: fast, prediction only uses important pieces.  $\\$
   cons: Non-differentiable (i.e. the network can either pay “attention” or not, with no in between), hard to train these models.
 
 * **Soft Attention**:
 
-  (1) First, learn a query representation.
-  (2) Then score each piece of the input to decide how relevant it is to the query. Predict using weighted average of all hidden states.
-  pros: Differentiable: can train “is it relevant” model with backprop.
+  (1) First, learn a query representation.  $\\$
+  (2) Then score each piece of the input to decide how relevant it is to the query. Predict using weighted average of all hidden states.  $\\$
+  pros: Differentiable: can train “is it relevant” model with backprop.  $\\$
   con: Slow: score and sum over all hidden states.
 
 <img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202211130015492.png" alt="image-20221111113859278" style="zoom: 67%;" />
@@ -189,8 +189,8 @@ Rather than use $h_4$ to do the prediction, take the average of all the edges.
 
 ## Transformer
 
-Each layer looks at all tokens in both directions. No fixed direction.
+Each layer looks at all tokens in both directions. No fixed direction. $\\$
 
-Pro: (1) Distance is no longer a factor. Can attend to any token in the sequence, no matter the distance.
-(2) No forward/back propagation through sequence, now only through layers.
+Pro: (1) Distance is no longer a factor. Can attend to any token in the sequence, no matter the distance. $\\$
+(2) No forward/back propagation through sequence, now only through layers. $\\$
 (3) Much easier to parallelize.
