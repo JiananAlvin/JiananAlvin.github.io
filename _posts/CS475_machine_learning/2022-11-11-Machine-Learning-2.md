@@ -24,7 +24,7 @@ We have talked about [[ref]](https://ai.plainenglish.io/loss-function-4c8e565289
 $L_w(y) = \sum_i^Nmax(0, -y_i(w\cdot x_i))$. 
 Calculate the gradient of our loss function:
 
-<img src="C:\Users\19869\AppData\Roaming\Typora\typora-user-images\image-20221110104212753.png" alt="image-20221110104212753" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202211130015426.png" alt="image-20221110104212753" style="zoom: 50%;" />
 
 **We are only updating the parameters when we are wrong.** Update rule:
 $w^{i+1} = w^i + \eta \partial L_w(y_i)$
@@ -32,7 +32,7 @@ $w^{i+1} = w^i + \eta (y_i - \hat{y}_i)x_i$, where $\hat{y}_i$ = sign($w \cdot x
 $w^{i+1} = w^i + \eta y_i x_i$
 Set $\eta$ = 1. If mistake on a positive example $w^{i+1} = w^i + x_i$. If mistake on a negative example $w^{i+1} = w^i - x_i$.
 
-<img src="C:\Users\19869\AppData\Roaming\Typora\typora-user-images\image-20221110103210389.png" alt="image-20221110103210389" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202211130015252.png" alt="image-20221110103210389" style="zoom: 67%;" />
 
 Summary: **Perceptron** is a linear function. It is a minimization of perceptron loss with a linear hypothesis class. It is a generalized linear model. We are approximating 0/1 loss and we are fitting it using **stochastic gradient descent**.
 
@@ -64,7 +64,7 @@ Multilayer Perceptron is the foundation of **neural networks**.  The power of th
 
 ### Network Terminology
 
-![image-20221110215114476](C:\Users\19869\AppData\Roaming\Typora\typora-user-images\image-20221110215114476.png)
+![image-20221110215114476](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202211130015112.png)
 
 ### Activation Function
 
@@ -75,11 +75,11 @@ The **activation function** should:
 
 ### Network Structure
 
-<img src="C:\Users\19869\AppData\Roaming\Typora\typora-user-images\image-20221110232128850.png" alt="image-20221110232128850" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202211130015194.png" alt="image-20221110232128850" style="zoom:80%;" />
 
 ### Forward Propagation
 
-<img src="C:\Users\19869\AppData\Roaming\Typora\typora-user-images\image-20221110224945087.png" alt="image-20221110224945087" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202211130015562.png" alt="image-20221110224945087" style="zoom:67%;" />
 
 ### Training Objective
 
@@ -105,7 +105,7 @@ The **activation function** should:
 
 Traditional neural network could not use previous information to predict the future information. Recurrent neural networks address this issue. They are networks with loops in them, allowing information to persist.
 
-![image-20221111092752003](C:\Users\19869\AppData\Roaming\Typora\typora-user-images\image-20221111092752003.png)
+![image-20221111092752003](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202211130015587.png)
 
 ### RNN Language Models
 
@@ -114,7 +114,7 @@ Algorithm: Sample a sequence from the probability distribution defined by the RN
 
 ### Vanishing Gradients
 
-<img src="C:\Users\19869\AppData\Roaming\Typora\typora-user-images\image-20221111081336012.png" alt="image-20221111081336012" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202211130015885.png" alt="image-20221111081336012" style="zoom: 50%;" />
 
 In practice, in $\Pi_{t=2}^4 \frac{\partial h_t}{\partial h_{t-1}}$, $t$ goes to $n$. $\frac{\partial h_t}{\partial h_{t-1}}$ are very small, multiplying lots of small numbers together gives you zero. That's called **vanishing gradient**. This means that long-range dependencies are difficult to learn (although in theory they are learnable).
 
@@ -137,19 +137,19 @@ Solutions for vanishing gradients.
 
 **Summary**:
 
-![image-20221111101850576](C:\Users\19869\AppData\Roaming\Typora\typora-user-images\image-20221111101850576.png)
+![image-20221111101850576](https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202211130015332.png)
 
 ### Gated Recurrent Unites (GRUs)
 
 LSTMs have lots of parameters. It's slow. **GRUs are faster**. It uses coupled forget and input gates. Instead of separately deciding what to forget and what we should add new information to, we make those decisions together. We only forget when we’re going to input something in its place. We only input new values to the state when we forget something older.
 
-<img src="C:\Users\19869\AppData\Roaming\Typora\typora-user-images\image-20221111104535149.png" alt="image-20221111104535149" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202211130015521.png" alt="image-20221111104535149" style="zoom:67%;" />
 
 ### Summary
 
 Better gradient propagation is possible when you use **additive** rather than multiplicative.
 
-<img src="C:\Users\19869\AppData\Roaming\Typora\typora-user-images\image-20221111103106521.png" alt="image-20221111103106521" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202211130015004.png" alt="image-20221111103106521" style="zoom:80%;" />
 
 
 
@@ -159,11 +159,11 @@ Better gradient propagation is possible when you use **additive** rather than mu
 
 ### Pooling
 
-<img src="C:\Users\19869\AppData\Roaming\Typora\typora-user-images\image-20221111111841910.png" alt="image-20221111111841910" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202211130015841.png" alt="image-20221111111841910" style="zoom:67%;" />
 
 Rather than use $h_4$ to do the prediction, take the average of all the edges.
 
-<img src="C:\Users\19869\AppData\Roaming\Typora\typora-user-images\image-20221111112146302.png" alt="image-20221111112146302" style="zoom: 80%;" />
+<img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202211130015225.png" alt="image-20221111112146302" style="zoom: 80%;" />
 
 ### Hard Attention vs. Soft Attention
 
@@ -181,9 +181,9 @@ Rather than use $h_4$ to do the prediction, take the average of all the edges.
   pros: Differentiable: can train “is it relevant” model with backprop.
   con: Slow: score and sum over all hidden states.
 
-<img src="C:\Users\19869\AppData\Roaming\Typora\typora-user-images\image-20221111113859278.png" alt="image-20221111113859278" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202211130015492.png" alt="image-20221111113859278" style="zoom: 67%;" />
 
-<img src="C:\Users\19869\AppData\Roaming\Typora\typora-user-images\image-20221111113828882.png" alt="image-20221111113828882" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202211130015991.png" alt="image-20221111113828882" style="zoom:67%;" />
 
 
 
