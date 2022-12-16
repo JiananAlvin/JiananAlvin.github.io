@@ -37,13 +37,18 @@ key: page-about
 * <p style="text-align:left;"><b>Assisted Driving System with Multi-sensor Fusion and Computer Vision</b><span style="float:right;">Nov. 2019 - Apr. 2020</span></p>
   <p>School of Computer Engineering, Nanjing Institute of Technology </p>
 
-## :newspaper: Publication
+### :newspaper: Publications
 
 * <p style="text-align:left;"><b>AI-Based Detection of Droplets and Bubbles in Digital Microfluidic Biochips </b><span style="float:right;">Nov. 2022</span></p>
   <p>Design, Automation and Test in Europe Conference</p>
 
 * <p style="text-align:left;"><b>Depth-based Deep Learning for Manhole Detection in UAV Navigation <a href="https://ieeexplore.ieee.org/abstract/document/9827720">[link]</a></b><span style="float:right;">Jul. 2022</span></p>
   <p>IEEE International Conference on Imaging Systems and Techniques</p>
+
+### **:school:** Teaching Assistant
+
+* <p style="text-align:left;"><b><a href="https://kurser.dtu.dk/course/27016">27016</a> – Design-Build 1: Devices for measuring cell growth</b><span style="float:right;">January 2023</span></p>
+  <p>Technical University of Denmark</p>
 
 ### :briefcase: Work experience
 
