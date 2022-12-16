@@ -27,7 +27,7 @@ key: page-about
 
 ### :microscope: Research
 
-* <p style="text-align:left;"><b>Exploring the applications of AI-based computer vision in digital microfluidic biochips</b><span style="float:right;">Jan. 2022 - Sep. 2022</span></p>
+* <p style="text-align:left;"><b>AI-based Computer Vision in the Context of Digital Microfluidic Biochips</b><span style="float:right;">Jan. 2022 - Sep. 2022</span></p>
   <p>Department of Applied Mathematics and Computer Science, Technical University of Denmark</p>
   
 * <p style="text-align:left;"><b>Deep Learning for Autonomous Perception in Visual Guided Navigation</b><span style="float:right;">Oct. 2021 - Apr. 2022</span></p>
@@ -47,7 +47,7 @@ key: page-about
 
 ### :briefcase: Work experience
 
-* <p style="text-align:left;"><b>Start-up: Muhuaxiao Technology Co., Ltd.</b> - AI & Back-end Developer<span style="float:right;">Aug. 2021 -Jun. 2022</span></p>
+* <p style="text-align:left;"><b>Start-up: Muhuaxiao Technology Co., Ltd.</b> - AI & Back-end Developer<span style="float:right;">Aug. 2021 - Jun. 2022</span></p>
   
 * <p style="text-align:left;"><b>New Oriental Education & Technology Group Inc.</b> - Data Analyst Intern<span style="float:right;">May 2020 - Aug. 2020</span></p>
 
@@ -73,16 +73,16 @@ key: page-about
     <li>Machine Learning: YOLO, OpenCV, PyTorch</li> 
 </ul></p>
 
-
-
 ### :trophy: Honors & Awards
 
-<p style="text-align:left;"><b>Reinholdt W. Jorck and Wife’s Scholarship</b><span style="float:right;">2022</span></p>
-<p>The Confederation of Danish Industry</p>
+* <p style="text-align:left;"><b>Reinholdt W. Jorck and Wife’s Scholarship</b><span style="float:right;">2022</span></p>
+  <p>The Confederation of Danish Industry</p>
 
-<p style="text-align:left;"><b>2021 DTU Relay</b> - First Prize<span style="float:right;">2021</span></p>
-<p>Technical University of Denmark</p>
+* <p style="text-align:left;"><b>2021 DTU Relay</b> - First Prize<span style="float:right;">2021</span></p>
+  <p>Technical University of Denmark</p>
 
-<p style="text-align:left;"><b>The Andersen Project Scholarship</b><span style="float:right;">2020</span></p>
-<p>National Student Union in Denmark</p>
+* <p style="text-align:left;"><b>The Andersen Project Scholarship</b><span style="float:right;">2020</span></p>
+  <p>National Student Union in Denmark</p>
+
+
 
