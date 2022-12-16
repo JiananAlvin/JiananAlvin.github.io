@@ -21,7 +21,7 @@ key: page-about
     <img src="https://raw.githubusercontent.com/JiananAlvin/ImageBed/master/202201300229178.jpg" width="150"/>
 </div>
 <div>
-    <br>Hi, I am Jianan Xu, a senior studying General Engineering (specialization: Computer Science) at the Technical University of Denmark (<a href="https://www.dtu.dk">DTU</a>). I am now studying at Johns Hopkins University (<a href="https://www.jhu.edu/">JHU</a>) as an exchange student in the United States. This blog records my life and studies. Enthusiasm for life and thirst for knowledge are "nourishment" for my growth. I will spare no effort to cultivate my "sprout" here; let it grow strong. Please feel free to contact me for my complete CV.
+    <br>Hi, I am Jianan Xu, a senior studying General Engineering (specialization: Computer Science) at the Technical University of Denmark (<a href="https://www.dtu.dk">DTU</a>). I am now studying at the Johns Hopkins University (<a href="https://www.jhu.edu/">JHU</a>) as an exchange student in the United States. This blog records my life and studies. Enthusiasm for life and thirst for knowledge are "nourishment" for my growth. I will spare no effort to cultivate my "sprout" here; let it grow strong. Please feel free to contact me for my complete CV.
 <br><br> </div>
 
 
