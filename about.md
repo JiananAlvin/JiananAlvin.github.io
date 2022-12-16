@@ -32,7 +32,7 @@ key: page-about
   
 * <p style="text-align:left;"><b>Deep Learning for Autonomous Perception in Visual Guided Navigation</b><span style="float:right;">Oct. 2021 - Apr. 2022</span></p>
   <p>Department of Electrical and Photonics Engineering, Technical University of Denmark</p>
-  <p>This project is a part of the research project <a href="https://www.dtu.dk/english/news/Nyhed?id=%7BF8B2908E-FAC2-48AB-A1A5-060839E880C8%7D">Inspectrone</a>.</p>
+  <p>This project is a part of the research project <a href="https://www.elektro.dtu.dk/english/news/nyhed?id=f8b2908e-fac2-48ab-a1a5-060839e880c8">Inspectrone</a>.</p>
 
 * <p style="text-align:left;"><b>Assisted Driving System with Multi-sensor Fusion and Computer Vision</b><span style="float:right;">Nov. 2019 - Apr. 2020</span></p>
   <p>School of Computer Engineering, Nanjing Institute of Technology </p>
