@@ -9,7 +9,7 @@ article_header:
 
 ### I. Defining Clusters
 
-A **cluster** is a group of similar examples. Define cluster $k$ by a prototype $\mu_k$. $r_{nk}$ is an indicator variable, $r_{nk} \in \{0, 1\}$, 1 means example $n$ is in cluster $k$; 0 means example $n$ is **not** in cluster $k$. The restriction is that every example must be in one cluster, $r$ is going to be a matrix where the rows of the matrix are going to sum to 1. 
+A **cluster** is a group of similar examples. Define cluster $k$ by a prototype $\mu_k$. $r_{nk}$ is an indicator variable, $r_{nk} \in$ {0, 1\}, 1 means example $n$ is in cluster $k$; 0 means example $n$ is **not** in cluster $k$. The restriction is that every example must be in one cluster, $r$ is going to be a matrix where the rows of the matrix are going to sum to 1. 
 
 Compute the average of all the examples in that cluster. For every example, if it is in the cluster (i.e. $r_{nk}=1$), sum it and divide by the number of examples in that cluster.
 
@@ -36,7 +36,9 @@ Learning procedure: each update reduces the value of $J$ (can't be negative). Th
 
 ### III. K-means
 
-(1) Given data $\{(\mathbf{x}_i)\}^N_{i=1}$, $\mathbf{x}_i \in \Re ^N$.
+(1) Given data
+
+$$\{(\mathbf{x}_i)\}^N_{i=1}, \mathbf{x}_i \in \Re ^N$$.
 
 (2) Randomly initialize $\mu_k$.
 
@@ -175,6 +177,8 @@ P(\mathbf{X\mid \pi,\mu,\Sigma})=\prod^N_{n=1} \sum^K_{k=1} \pi_k \mathcal{N}(\m
 $$
 
 How should we set our model parameters? Let’s use **maximum likelihood**! First, we write the **log-likelihood** function:
+
+
 $$
 \log P(\mathbf{X\mid \pi,\mu,\Sigma})=\sum^N_{n=1} \log \{ \sum^K_{k=1} \pi_k \mathcal{N}(\mathbf{x}_n\mid \mu_k, \Sigma_k) \}
 $$
