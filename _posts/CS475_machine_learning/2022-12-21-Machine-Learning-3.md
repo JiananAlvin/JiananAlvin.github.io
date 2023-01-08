@@ -36,9 +36,7 @@ Learning procedure: each update reduces the value of $J$ (can't be negative). Th
 
 ### III. K-means
 
-(1) Given data
-
-$$\{(\mathbf{x}_i)\}^N_{i=1}, \mathbf{x}_i \in \Re ^N$$.
+(1) Given data $$\{(\mathbf{x}_i)\}^N_{i=1}, \mathbf{x}_i \in \Re ^N$$.
 
 (2) Randomly initialize $\mu_k$.
 
