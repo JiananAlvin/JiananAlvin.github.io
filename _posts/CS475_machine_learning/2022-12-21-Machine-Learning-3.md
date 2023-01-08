@@ -60,6 +60,8 @@ Learning procedure: each update reduces the value of $J$ (can't be negative). Th
 
   Solution: Spectral Clustering
 
+  
+
   <img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202212181346854.png" alt="image-20221218134655781" style="zoom: 50%;" />
 
 * Assumes spherical, equally likely clusters.
