@@ -12,6 +12,8 @@ article_header:
 A **cluster** is a group of similar examples. Define cluster $k$ by a prototype $\mu_k$. $r_{nk}$ is an indicator variable, $r_{nk} \in \{0, 1\}$, 1 means example $n$ is in cluster $k$; 0 means example $n$ is **not** in cluster $k$. The restriction is that every example must be in one cluster, $r$ is going to be a matrix where the rows of the matrix are going to sum to 1. 
 
 Compute the average of all the examples in that cluster. For every example, if it is in the cluster (i.e. $r_{nk}=1$), sum it and divide by the number of examples in that cluster.
+
+
 $$
 \mu_k = \frac{1}{\sum^N_{n=1}r_{nk}}\sum^N_{n=1}r_{nk}\mathbf{x}_n
 $$
@@ -21,6 +23,8 @@ $$
 Maximize the similarity of every cluster.
 
 **Distortion measure**: for every example in that cluster, how far is that example from the mean of the cluster.
+
+
 $$
 J = \sum^N_{n=1}\sum^K_{k=1}r_{nk}||\mathbf{x}_n-\mu_k||^2
 $$
@@ -83,6 +87,8 @@ We cannot compare different clusterings by evaluating a loss function without la
 (1) **Purity**: Assign each cluster to the class which is most frequent in the cluster. Drawback: high purity when many clusters. So purity is only useful if you are comparing clusterings that use the same number of clusters.
 
 (2) Normalized mutual information **NMI**: How much do we learn about the labels when we are told the clusters?
+
+
 $$
 NMI(Y,C)=\frac{2 \times MI(Y;C)}{H(Y) + H(C)}
 $$
@@ -168,7 +174,6 @@ $$
 $$
 
 * Let’s begin by taking the derivative with respect to $\mu_k$, $\Sigma_k$ and $\pi_k$, and set the derivative equal to 0 respectively.
-
 * Finally, we solve $\mu_k$, $\Sigma_k$ and $\pi_k$ respectively. We get:
 
 <img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202212182247437.png" alt="image-20221218224759324" style="zoom:50%;" />
@@ -203,12 +208,16 @@ A general technique for maximizing likelihood when you have latent variables. EM
 ### Chain Graphical Model
 
 <img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202212201725822.png" alt="image-20221220172531657" style="zoom:50%;" />
+
+
 $$
 p(x)=\frac{1}{Z} \uppsi_{1,2}(x_1,x_2) \uppsi_{2,3}(x_2,x_3) ... \uppsi_{N-1,N}(x_{N-1},x_N)
 $$
 $\frac{1}{Z}$ is normalizer. $\uppsi$ is potential function.
 
 How do I get the probability of a state $p(x_n)$. I have the joint probability of the whole thing. Sum over all of the states they don't see (i.e. all of possible configurations of the others), that's marginalization. <span style="color:blue">This naive way takes O($2^N$), because for each x, we have two cases 0 or 1, and we multiply every two cases. Thus, 2 $\times$ 2 $\times$ 2 $\times$ 2 ... </span>
+
+
 $$
 p(x_n)=\sum_{x_1}\sum_{x_2}...\sum_{x_{n-1}}\sum_{x_{n+1}}...\sum_{x_N}p(x)
 $$
@@ -217,6 +226,8 @@ By rearranging the term and pushing the $\sum$ in, we get
 <img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202212202258704.png" alt="image-20221220225839516" style="zoom: 50%;" />
 
 K states: How many possible values of $x$. **Cost**: For every $x$, we calculate all possible combinations of $K$ states, that is $K^2$ combinations. After, we save the result and use it directly in the following calculations. For example,
+
+
 $$
 \mu_\alpha(x_2)=\sum_{x_1}\uppsi_{1,2}(x_1, x_2) \longrightarrow K^2 \\
 \mu_\alpha(x_3)=\sum_{x_2}\uppsi_{2,3}(x_2, x_3)\mu_\alpha(x_2) \longrightarrow K^2
@@ -224,6 +235,8 @@ $$
 We only need to calculate $K^2$ ($N-1$) times. <span style="color:blue">Thus, the time complex is O($NK^2$)</span>.
 
 <span style="color:blue">**Therefore, the marginal probability of $x_n$:**</span>
+
+
 $$
 p(x_n)=\frac{1}{Z}\mu_{\alpha}(x_n)\mu_{\beta}(x_n)
 $$
@@ -248,10 +261,14 @@ $$
 <img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202212210230681.png" alt="image-20221221022955521" style="zoom: 67%;" />
 
 Goal:
+
+
 $$
 p(x) = \prod_{s\in ne(x)} \sum_{X_s}F_s(x, X_s)
 $$
 A product of all the factors coming into this node. $F$ is a factor, $s$ is an index of factors (eg. there are 2 factors coming into the node $x_n$), $ne(x)$ is all the neighboring factors for the node $x$. For the potential function $\uppsi_{n-1}$, where the possible values that can take, it can be $x_{n-1}$ and $x_n$ both. We should sum over all of the possible cases of $ x_{n-1}$ and pass this message.
+
+
 $$
 \mu_{f\rightarrow x}(x)=\sum_{X_s}F_s(x,X_s)
 $$
@@ -260,6 +277,8 @@ where $X_s$ is all the other nodes that has a role in the factor. If $f=\uppsi_{
 <img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202212210947577.png" alt="image-20221221094722405"  />
 
 $f$ is a scoring function that assigns a score to different combinations of all the nodes I am attached to (in this case, $x_n$). When you compute the factor multiply by how likely each one of those assignments is according things further down to the chain. For example, when I marginalize $f=\uppsi_{n-1,n}$ over $x_{n-1}$ inside the factor $f(x,x_1,x_2,...,x_n)$, I need to consider whether or not $x_{n-1}$ is likely to be true or false and multiply this. $\mu_{x\rightarrow f}(x)$ is going to say what is the likelihood that I have according to everything further down the chain. 
+
+
 $$
 \mu_{x\rightarrow f}=\prod_{l\in ne(x)\backslash f} \mu_{f_l \rightarrow x}(x)
 $$
@@ -296,9 +315,9 @@ Max Product Algorithm computes the configuration of the graph that gives the hig
 
 * Solution: keep track of which states correspond to the same max configuration.
 
-### Approximate Inference
+## Approximate Inference
 
-#### variational Inference
+### variational Inference
 
 <img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202212211222421.png" alt="image-20221221122246245" style="zoom: 33%;" />
 
@@ -306,23 +325,25 @@ Max Product Algorithm computes the configuration of the graph that gives the hig
 
 <img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202212211231411.png" alt="image-20221221123145262" style="zoom: 50%;" />
 
-###  Structured Prediction
+## Structured Prediction
 
-#### Structured Prediction Challenges
+### Structured Prediction Challenges
 
 <img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202212211242530.png" alt="image-20221221124208378" style="zoom: 33%;" />
 
-#### Hidden Markov Model (HMM)
+### Hidden Markov Model (HMM)
 
 <img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202212211256098.png" alt="image-20221221125647945" style="zoom: 33%;" />
 
 An HMM is a directed graphical model.
 
-#### Conditional Random Fields
+### Conditional Random Fields (CRF)
 
 <img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202212211303560.png" alt="image-20221221130341400" style="zoom:50%;" />
 
 <img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202212211313853.png" alt="image-20221221131322685" style="zoom: 50%;" />
+
+### HMMs vs. CRFs
 
 <img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202212211314144.png" alt="image-20221221131440996" style="zoom: 50%;" />
 
