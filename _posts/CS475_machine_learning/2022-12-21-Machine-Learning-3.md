@@ -28,6 +28,8 @@ Maximize the similarity of every cluster.
 $$
 J = \sum^N_{n=1}\sum^K_{k=1}r_{nk}||\mathbf{x}_n-\mu_k||^2
 $$
+
+
 There are two parameters: cluster means $\mu_k$ and the assignment of examples to clusters $r_{nk}$. **We aim to select  $\mu$ and $r$ such that they minimize $J$**.
 
 Learning procedure: each update reduces the value of $J$ (can't be negative). Therefore it will converge. **Note: $J$ is non-convex.** Therefore, resulting value may not be the best. initial value matter! If I have a good initialization then I'm going to get a better solution. This is called k-means.
@@ -40,9 +42,9 @@ Learning procedure: each update reduces the value of $J$ (can't be negative). Th
 
 (3) Iteratively update until convergence:
 
-​	(3.1) assign every point to the closest $\mu_k$.
+​		(3.1) assign every point to the closest $\mu_k$.
 
-​	(3.2) recompute means $\mu_k$.
+​		(3.2) recompute means $\mu_k$.
 
 #### Limitations
 
@@ -60,11 +62,11 @@ Learning procedure: each update reduces the value of $J$ (can't be negative). Th
 
   <img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202212181346854.png" alt="image-20221218134655781" style="zoom: 50%;" />
 
-* Assumes spherical, equally likely clusters 
+* Assumes spherical, equally likely clusters.
 
   Solution: Spectral Clustering
 
-* Hard assignment of example to clusters
+* Hard assignment of example to clusters.
 
   Solution: Probabilistic clustering
 
@@ -76,7 +78,7 @@ K-means is using Euclidean distance $d(x_i, x_j) = \sqrt{\sum^D_{d=1}(x_{i,d}-x_
 
 #### Loss Function
 
-Caveat: some clustering is convex but requires assumptions.
+Caveat: Some clustering is convex but requires assumptions.
 
 #### Evaluation
 
@@ -92,6 +94,8 @@ We cannot compare different clusterings by evaluating a loss function without la
 $$
 NMI(Y,C)=\frac{2 \times MI(Y;C)}{H(Y) + H(C)}
 $$
+
+
 where $MI$ is mutual information, and $H$ is entropy.
 
 #### Algorithm
@@ -109,7 +113,9 @@ Horizontal line cuts tree into clusters based on post-hoc decision of $k$. Below
 ##### Divisive (Top Down) Clustering vs. Agglomerative (Bottom Up) Clustering
 
 * **Agglomerative cluster** is usually faster, because it only considers “local” clusters in a merge.
+
 * **Divisive** may be more sensitive to global data structure. We have access to all the data when making our first split. The advantage of the top down method is you could look at the global properties of the data and don't just make local decisions, but that might be more expensive.
+
   You can get more balanced tree by going top down. You can make the criteria of top down.
 
 ####  K-medoids
@@ -173,6 +179,8 @@ $$
 \log P(\mathbf{X\mid \pi,\mu,\Sigma})=\sum^N_{n=1} \log \{ \sum^K_{k=1} \pi_k \mathcal{N}(\mathbf{x}_n\mid \mu_k, \Sigma_k) \}
 $$
 
+
+
 * Let’s begin by taking the derivative with respect to $\mu_k$, $\Sigma_k$ and $\pi_k$, and set the derivative equal to 0 respectively.
 * Finally, we solve $\mu_k$, $\Sigma_k$ and $\pi_k$ respectively. We get:
 
@@ -213,6 +221,8 @@ A general technique for maximizing likelihood when you have latent variables. EM
 $$
 p(x)=\frac{1}{Z} \uppsi_{1,2}(x_1,x_2) \uppsi_{2,3}(x_2,x_3) ... \uppsi_{N-1,N}(x_{N-1},x_N)
 $$
+
+
 $\frac{1}{Z}$ is normalizer. $\uppsi$ is potential function.
 
 How do I get the probability of a state $p(x_n)$. I have the joint probability of the whole thing. Sum over all of the states they don't see (i.e. all of possible configurations of the others), that's marginalization. <span style="color:blue">This naive way takes O($2^N$), because for each x, we have two cases 0 or 1, and we multiply every two cases. Thus, 2 $\times$ 2 $\times$ 2 $\times$ 2 ... </span>
@@ -221,6 +231,8 @@ How do I get the probability of a state $p(x_n)$. I have the joint probability o
 $$
 p(x_n)=\sum_{x_1}\sum_{x_2}...\sum_{x_{n-1}}\sum_{x_{n+1}}...\sum_{x_N}p(x)
 $$
+
+
 By rearranging the term and pushing the $\sum$ in, we get
 
 <img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202212202258704.png" alt="image-20221220225839516" style="zoom: 50%;" />
@@ -232,6 +244,8 @@ $$
 \mu_\alpha(x_2)=\sum_{x_1}\uppsi_{1,2}(x_1, x_2) \longrightarrow K^2 \\
 \mu_\alpha(x_3)=\sum_{x_2}\uppsi_{2,3}(x_2, x_3)\mu_\alpha(x_2) \longrightarrow K^2
 $$
+
+
 We only need to calculate $K^2$ ($N-1$) times. <span style="color:blue">Thus, the time complex is O($NK^2$)</span>.
 
 <span style="color:blue">**Therefore, the marginal probability of $x_n$:**</span>
@@ -240,6 +254,8 @@ We only need to calculate $K^2$ ($N-1$) times. <span style="color:blue">Thus, th
 $$
 p(x_n)=\frac{1}{Z}\mu_{\alpha}(x_n)\mu_{\beta}(x_n)
 $$
+
+
 **Each factor** ($\mu_{\alpha}(x_n)$, $\mu_{\beta}(x_n)$) depends only on one side of the chain. 
 
 #### Messages
@@ -266,12 +282,16 @@ Goal:
 $$
 p(x) = \prod_{s\in ne(x)} \sum_{X_s}F_s(x, X_s)
 $$
+
+
 A product of all the factors coming into this node. $F$ is a factor, $s$ is an index of factors (eg. there are 2 factors coming into the node $x_n$), $ne(x)$ is all the neighboring factors for the node $x$. For the potential function $\uppsi_{n-1}$, where the possible values that can take, it can be $x_{n-1}$ and $x_n$ both. We should sum over all of the possible cases of $ x_{n-1}$ and pass this message.
 
 
 $$
 \mu_{f\rightarrow x}(x)=\sum_{X_s}F_s(x,X_s)
 $$
+
+
 where $X_s$ is all the other nodes that has a role in the factor. If $f=\uppsi_{n-1,n}$, then $X_s=x_{n-1}$. Here we have $x$ and any other nodes connected to the factor $\uppsi_{n-1,n}$, that is $x_{n-1}$ in this case. Sum over all possible combinations of those nodes.
 
 <img src="https://raw.githubusercontent.com/JiananAlvin/image_bed/master/202212210947577.png" alt="image-20221221094722405"  />
@@ -282,6 +302,8 @@ $f$ is a scoring function that assigns a score to different combinations of all 
 $$
 \mu_{x\rightarrow f}=\prod_{l\in ne(x)\backslash f} \mu_{f_l \rightarrow x}(x)
 $$
+
+
 <span style="color:blue">The message a node sends to a factor = a product of all messages it got from all its neighboring factors.</span>
 
 #### Base cases
