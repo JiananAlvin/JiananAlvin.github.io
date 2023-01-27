@@ -27,6 +27,9 @@ key: page-about
 
 ### :microscope: Research
 
+* <p style="text-align:left;"><b>Detecting and Recovering Missing-movement Events in Digital Microfluidic Biochips</b><span style="float:right;">Jan. 2023 - Now</span></p>
+  <p>Department of Applied Mathematics and Computer Science, Technical University of Denmark</p>
+
 * <p style="text-align:left;"><b>AI-based Computer Vision in the Context of Digital Microfluidic Biochips</b><span style="float:right;">Jan. 2022 - Sep. 2022</span></p>
   <p>Department of Applied Mathematics and Computer Science, Technical University of Denmark</p>
   
@@ -46,6 +49,9 @@ key: page-about
   <p>IEEE International Conference on Imaging Systems and Techniques</p>
 
 ### **:school:** Teaching Assistant
+
+* <p style="text-align:left;"><b><a href="https://kurser.dtu.dk/course/02160">02160</a> – Agile Object-oriented Software Development</b><span style="float:right;">Spring 2023</span></p>
+  <p>Technical University of Denmark</p>
 
 * <p style="text-align:left;"><b><a href="https://kurser.dtu.dk/course/27016">27016</a> – Design-Build 1: Devices for measuring cell growth</b><span style="float:right;">January 2023</span></p>
   <p>Technical University of Denmark</p>
