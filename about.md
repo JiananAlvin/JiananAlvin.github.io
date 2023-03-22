@@ -87,7 +87,7 @@ key: page-about
 ### :trophy: Honors & Awards
 
 * <p style="text-align:left;"><b>Travel Grant for Conference Participation</b><span style="float:right;">2023</span></p>
-  <p>The Otto Mønsteds Foundation</p>
+  <p>Otto Mønsteds Foundation</p>
 
 * <p style="text-align:left;"><b>Reinholdt W. Jorck and Wife’s Scholarship</b><span style="float:right;">2022</span></p>
   <p>The Confederation of Danish Industry</p>
