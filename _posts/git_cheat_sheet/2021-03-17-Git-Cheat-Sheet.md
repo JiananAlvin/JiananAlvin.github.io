@@ -20,11 +20,11 @@ article_header:
 4) git push -u origin [branch name]
 ```
 
- 
 
-## Git Cheat Sheet
 
-![img](https://www.runoob.com/wp-content/uploads/2015/02/011500266295799.jpg)
+ ## Git Cheat Sheet
+
+![image-20230224231437318](C:\Users\19869\AppData\Roaming\Typora\typora-user-images\image-20230224231437318.png)
 
 | Git Commands                                                 | Comments                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |

@@ -74,7 +74,7 @@ key: page-about
 #### Professional skills
 
 <p><ul>
-  <li>Programming languages: Python, Java, C/C++, SQL, Bash, F#, R, MATLAB, PHP, Julia, Assembly language</li>
+  <li>Programming languages: Python, Java, C#, C/C++, SQL, Bash, F#, R, MATLAB, PHP, Julia, Assembly language</li>
   <li>Operating systems: Ubuntu</li>
   <li>Embedded development: ROS, Docker</li>
   <li>Document markup languages: LaTeX, Markdown, HTML</li>
@@ -85,6 +85,9 @@ key: page-about
 </ul></p>
 
 ### :trophy: Honors & Awards
+
+* <p style="text-align:left;"><b>Travel Grant for Conference Participation</b><span style="float:right;">2023</span></p>
+  <p>The Otto Mønsteds Foundation</p>
 
 * <p style="text-align:left;"><b>Reinholdt W. Jorck and Wife’s Scholarship</b><span style="float:right;">2022</span></p>
   <p>The Confederation of Danish Industry</p>
