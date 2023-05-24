@@ -37,9 +37,6 @@ key: page-about
   <p>Department of Electrical and Photonics Engineering, Technical University of Denmark</p>
   <p>This project is a part of the research project <a href="https://www.elektro.dtu.dk/english/news/nyhed?id=f8b2908e-fac2-48ab-a1a5-060839e880c8">Inspectrone</a>.</p>
 
-* <p style="text-align:left;"><b>Assisted Driving System with Multi-sensor Fusion and Computer Vision</b><span style="float:right;">Nov. 2019 - Apr. 2020</span></p>
-  <p>School of Computer Engineering, Nanjing Institute of Technology </p>
-
 ### :newspaper: Publications
 
 * <p style="text-align:left;"><b>AI-Based Detection of Droplets and Bubbles in Digital Microfluidic Biochips </b><span style="float:right;">Nov. 2022</span></p>
@@ -91,9 +88,6 @@ key: page-about
 
 * <p style="text-align:left;"><b>Reinholdt W. Jorck and Wife’s Scholarship</b><span style="float:right;">2022</span></p>
   <p>The Confederation of Danish Industry</p>
-
-* <p style="text-align:left;"><b>2021 DTU Relay</b> - First Prize<span style="float:right;">2021</span></p>
-  <p>Technical University of Denmark</p>
 
 * <p style="text-align:left;"><b>The Andersen Project Scholarship</b><span style="float:right;">2020</span></p>
   <p>National Student Union in Denmark</p>
