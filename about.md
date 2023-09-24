@@ -21,13 +21,13 @@ key: page-about
     <img src="https://raw.githubusercontent.com/JiananAlvin/ImageBed/master/202201300229178.jpg" width="150"/>
 </div>
 <div>
-    <br>Hi, I am Jianan Xu, a senior studying General Engineering (specialization: Computer Science) at the Technical University of Denmark (<a href="https://www.dtu.dk">DTU</a>). I studied at Johns Hopkins University (<a href="https://www.jhu.edu/">JHU</a>) as an exchange student in the United States last fall term. This blog records my life and studies. Enthusiasm for life and thirst for knowledge are "nourishment" for my growth. I will spare no effort to cultivate my "sprout" here; let it grow strong. Please feel free to contact me for my complete CV.
+    <br>Hi, I am Jianan Xu, a Master student studying Computer Science at <a href="https://www.epfl.ch/en/">EPFL</a>. This blog records my life and studies. Enthusiasm for life and thirst for knowledge are "nourishment" for my growth. I will spare no effort to cultivate my "sprout" here; let it grow strong. Please feel free to contact me for my complete CV.
 <br><br> </div>
 
 
 ### :microscope: Research
 
-* <p style="text-align:left;"><b>Detecting and Recovering Missing-movement Events in Digital Microfluidic Biochips</b><span style="float:right;">Jan. 2023 - Now</span></p>
+* <p style="text-align:left;"><b>Detecting and Recovering Missing-movement Events in Digital Microfluidic Biochips</b><span style="float:right;">Jan. 2023 - Jun. 2023</span></p>
   <p>Department of Applied Mathematics and Computer Science, Technical University of Denmark</p>
 
 * <p style="text-align:left;"><b>AI-based Computer Vision in the Context of Digital Microfluidic Biochips</b><span style="float:right;">Jan. 2022 - Sep. 2022</span></p>
@@ -39,7 +39,7 @@ key: page-about
 
 ### :newspaper: Publications
 
-* <p style="text-align:left;"><b>AI-Based Detection of Droplets and Bubbles in Digital Microfluidic Biochips </b><span style="float:right;">Nov. 2022</span></p>
+* <p style="text-align:left;"><b>AI-Based Detection of Droplets and Bubbles in Digital Microfluidic Biochips <a href="https://ieeexplore.ieee.org/document/10136887">[link]</a></b><span style="float:right;">Nov. 2022</span></p>
   <p>Design, Automation and Test in Europe Conference</p>
 
 * <p style="text-align:left;"><b>Depth-based Deep Learning for Manhole Detection in UAV Navigation <a href="https://ieeexplore.ieee.org/abstract/document/9827720">[link]</a></b><span style="float:right;">Jul. 2022</span></p>
@@ -65,13 +65,13 @@ key: page-about
 
 <p><ul>
   <li>Chinese - native</li>
-  <li>English - TOEFL iBT 112</li>
+  <li>English - fluent</li>
 </ul></p>
 
 #### Professional skills
 
 <p><ul>
-  <li>Programming languages: Python, Java, C#, C/C++, SQL, Bash, F#, R, MATLAB, PHP, Julia, Assembly language</li>
+  <li>Programming languages: Python, Java, C#, C/C++, Go, SQL, Bash, F#, R, MATLAB, PHP, Julia, Assembly language</li>
   <li>Operating systems: Ubuntu</li>
   <li>Embedded development: ROS, Docker</li>
   <li>Document markup languages: LaTeX, Markdown, HTML</li>
