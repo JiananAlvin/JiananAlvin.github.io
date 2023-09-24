@@ -22,7 +22,7 @@ key: page-about
 </div>
 <div>
     <br>Hi, I am Jianan Xu, a Master student studying Computer Science at <a href="https://www.epfl.ch/en/">EPFL</a>. This blog records my life and studies. Enthusiasm for life and thirst for knowledge are "nourishment" for my growth. I will spare no effort to cultivate my "sprout" here; let it grow strong. Please feel free to contact me for my complete CV.
-<br><br> </div>
+<br><br><br> </div>
 
 
 ### :microscope: Research
