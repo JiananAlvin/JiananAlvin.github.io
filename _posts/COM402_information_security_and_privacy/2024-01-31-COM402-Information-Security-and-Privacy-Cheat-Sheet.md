@@ -29,7 +29,7 @@ This is my cheat sheet for the course [COM402 Information Security and Privacy](
 
 ###### 9. Machine Learning Security
 
-###### 10.Trusted Computing
+###### 10. Trusted Computing
 
 ###### 11. Crypto Basics
 
