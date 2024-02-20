@@ -27,6 +27,9 @@ key: page-about
 
 ### :microscope: Research
 
+* <p style="text-align:left;"><b>Incentive Mechanism in Multi-modal Federated Learning</b><span style="float:right;">Feb. 2024 - Jun. 2024</span></p>
+  <p>Artificial Intelligence Laboratory, EPFL</p>
+
 * <p style="text-align:left;"><b>Detecting and Recovering Missing-movement Events in Digital Microfluidic Biochips</b><span style="float:right;">Jan. 2023 - Jun. 2023</span></p>
   <p>Department of Applied Mathematics and Computer Science, Technical University of Denmark</p>
 
@@ -61,25 +64,10 @@ key: page-about
 
 ### :star: Skills
 
-#### Language skills
+**Language skills**: Chinese - native, English - advanced, French - beginner
 
-<p><ul>
-  <li>Chinese - native</li>
-  <li>English - fluent</li>
-</ul></p>
+**Professional skills:** Java, Python, Go, C/C++, C#, F#, SQL, Bash, R, MATLAB, PHP, Julia, HTML, LaTeX, ROS, Docker, CAD, OpenCV, PyTorch
 
-#### Professional skills
-
-<p><ul>
-  <li>Programming languages: Python, Java, C#, C/C++, Go, SQL, Bash, F#, R, MATLAB, PHP, Julia, Assembly language</li>
-  <li>Operating systems: Ubuntu</li>
-  <li>Embedded development: ROS, Docker</li>
-  <li>Document markup languages: LaTeX, Markdown, HTML</li>
-  <li>Mathematical tools: Maple</li>
-  <li>Multiphysics simulation: COMSOL</li>
-  <li>CAD modelling: Fusion360, Inventor</li>
-    <li>Machine Learning: YOLO, OpenCV, PyTorch</li> 
-</ul></p>
 
 ### :trophy: Honors & Awards
 
