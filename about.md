@@ -17,25 +17,18 @@ titles:
 key: page-about
 ---
 
-<div style="float:left; margin-right:2em;">
-    <img src="https://raw.githubusercontent.com/JiananAlvin/ImageBed/master/202201300229178.jpg" width="150"/>
-</div>
 <div>
     <br>Hi, I am Jianan Xu, a Master student studying Computer Science at <a href="https://www.epfl.ch/en/">EPFL</a>. This blog records my life and studies. Enthusiasm for life and thirst for knowledge are "nourishment" for my growth. I will spare no effort to cultivate my "sprout" here; let it grow strong. Please feel free to contact me for my complete CV.
-<br><br><br> </div>
-
+</div>
 
 ### :microscope: Research
-
-* <p style="text-align:left;"><b>Incentive Mechanism in Multi-modal Federated Learning</b><span style="float:right;">Feb. 2024 - Jun. 2024</span></p>
-  <p>Artificial Intelligence Laboratory, EPFL</p>
 
 * <p style="text-align:left;"><b>Detecting and Recovering Missing-movement Events in Digital Microfluidic Biochips</b><span style="float:right;">Jan. 2023 - Jun. 2023</span></p>
   <p>Department of Applied Mathematics and Computer Science, Technical University of Denmark</p>
 
 * <p style="text-align:left;"><b>AI-based Computer Vision in the Context of Digital Microfluidic Biochips</b><span style="float:right;">Jan. 2022 - Sep. 2022</span></p>
   <p>Department of Applied Mathematics and Computer Science, Technical University of Denmark</p>
-  
+
 * <p style="text-align:left;"><b>Deep Learning for Autonomous Perception in Visual Guided Navigation</b><span style="float:right;">Oct. 2021 - Apr. 2022</span></p>
   <p>Department of Electrical and Photonics Engineering, Technical University of Denmark</p>
   <p>This project is a part of the research project <a href="https://www.elektro.dtu.dk/english/news/nyhed?id=f8b2908e-fac2-48ab-a1a5-060839e880c8">Inspectrone</a>.</p>
