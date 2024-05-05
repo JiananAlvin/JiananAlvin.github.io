@@ -1,6 +1,6 @@
 ---
 title: Data Management and Data Science
-tags: database, data_science, data_management
+tags: database data_science data_management
 article_header:
   type: c
 ---
@@ -40,5 +40,3 @@ This is my cheat sheet for the course [CS460 Systems for Data Management and Dat
 
 
 <div>{%- include extensions/slideshare.html id='nGUT478VKORrBG' -%}</div>
-
-<iframe src="https://www.slideshare.net/slideshow/embed_code/key/nGUT478VKORrBG?hostedIn=slideshare&page=upload" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
