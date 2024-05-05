@@ -1,5 +1,5 @@
 ---
-title: COM402 Information Security and Privacy Cheat Sheet
+title: Information Security and Privacy
 tags: cyber_security
 article_header:
   type: c
