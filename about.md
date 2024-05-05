@@ -23,7 +23,7 @@ key: page-about
 
 ### :microscope: Research
 
-* <p style="text-align:left;"><b>Detecting and Recovering Missing-movement Events in Digital Microfluidic Biochips</b><span style="float:right;">Jan. 2023 - Jun. 2023</span></p>
+* <p style="text-align:left;"><b>Enhancing Reliability in Digital Microfluidic Biochips Using AI Techniques</b><span style="float:right;">Jan. 2023 - Mar. 2024</span></p>
   <p>Department of Applied Mathematics and Computer Science, Technical University of Denmark</p>
 
 * <p style="text-align:left;"><b>AI-based Computer Vision in the Context of Digital Microfluidic Biochips</b><span style="float:right;">Jan. 2022 - Sep. 2022</span></p>
@@ -41,15 +41,13 @@ key: page-about
 * <p style="text-align:left;"><b>Depth-based Deep Learning for Manhole Detection in UAV Navigation <a href="https://ieeexplore.ieee.org/abstract/document/9827720">[link]</a></b><span style="float:right;">Jul. 2022</span></p>
   <p>IEEE International Conference on Imaging Systems and Techniques</p>
 
-### **:school:** Teaching Assistant
+### :briefcase: Professional Experience
 
-* <p style="text-align:left;"><b><a href="https://kurser.dtu.dk/course/02160">02160</a> – Agile Object-oriented Software Development</b><span style="float:right;">Spring 2023</span></p>
-  <p>Technical University of Denmark</p>
+* <p style="text-align:left;"><b>Technical University of Denmark</b> - Teaching Assistants<span style="float:right;">Jan. 2023 - May 2023</span></p>
 
-* <p style="text-align:left;"><b><a href="https://kurser.dtu.dk/course/27016">27016</a> – Design-Build 1: Devices for measuring cell growth</b><span style="float:right;">January 2023</span></p>
-  <p>Technical University of Denmark</p>
+  * <p style="text-align:left;"><a href="https://kurser.dtu.dk/course/02160">02160</a> – Agile Object-oriented Software Development
 
-### :briefcase: Work experience
+  * <p style="text-align:left;"><a href="https://kurser.dtu.dk/course/27016">27016</a> – Design-Build 1: Devices for measuring cell growth
 
 * <p style="text-align:left;"><b>Start-up: Muhuaxiao Technology Co., Ltd.</b> - AI & Back-end Developer<span style="float:right;">Aug. 2021 - Jun. 2022</span></p>
   
@@ -59,7 +57,7 @@ key: page-about
 
 **Language skills**: Chinese - native, English - advanced, French - beginner
 
-**Professional skills:** Java, Python, Go, C/C++, C#, F#, SQL, Bash, R, MATLAB, PHP, Julia, HTML, LaTeX, ROS, Docker, CAD, OpenCV, PyTorch
+**Professional skills:** Java, Python, Go, React, C/C++, C#, F#, SQL, Bash, R, MATLAB, PHP, Julia, LaTeX, ROS, Docker, CAD, OpenCV, PyTorch, Scala
 
 
 ### :trophy: Honors & Awards
