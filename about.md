@@ -35,6 +35,9 @@ key: page-about
 
 ### :newspaper: Publications
 
+* <p style="text-align:left;"><b>Enhancing Reliability in Digital Microfluidic Biochips: An AI-Based Solution for Real-Time Recovery of Missing-Movement Events</b>
+  <p>Coming soon ...</p>
+
 * <p style="text-align:left;"><b>AI-Based Detection of Droplets and Bubbles in Digital Microfluidic Biochips <a href="https://ieeexplore.ieee.org/document/10136887">[link]</a></b><span style="float:right;">Nov. 2022</span></p>
   <p>Design, Automation and Test in Europe Conference</p>
 
