@@ -71,7 +71,7 @@ key: page-about
       <span style="text-decoration: underline; font-weight: bold;">Jianan Xu</span>, Luca Pezzarossa, Jan Madsen
     </div>
     <div style="margin-top: 5px; font-size: 14px;">
-      <span style="color: #b7410e;"><a href="arxiv-link" style="color: #b7410e; text-decoration: none;">[Paper]</a></span><br>
+      <span style="color: #b7410e;"><a href="arxiv-link" style="color: #b7410e; text-decoration: none;">[Thesis]</a></span><br>
       <em>Bachelor's thesis 2023</em> <!-- <span style="color: red; font-weight: bold;">Oral</span> -->
     </div>
     <div style="margin-top: 10px; font-size: 14px;">
@@ -125,6 +125,8 @@ key: page-about
     </div>
   </div>
 </div>
+
+
 
 
 
@@ -191,6 +193,8 @@ key: page-about
     <div>Oct. 2021 – Apr. 2022</div>
   </div>
 </div>
+
+
 
 
 
