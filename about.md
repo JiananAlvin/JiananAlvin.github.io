@@ -79,7 +79,6 @@ key: page-about
     </div>
   </div>
 </div>
-
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px; gap: 20px;">
   <!-- Fixed-size image box -->
   <div style="flex: 0 0 auto; width: 250px; height: 150px; display: flex; align-items: center; justify-content: center;">
@@ -91,7 +90,7 @@ key: page-about
       AI-Based Detection of Droplets and Bubbles in Digital Microfluidic Biochips
     </div>
     <div style="margin-top: 5px; font-size: 14px;">
-      <span style="text-decoration: underline; font-weight: bold;">Jianan Xu</span>, Luca Pezzarossa, Jan Madsen
+      <span style="text-decoration: underline; font-weight: bold;">Jianan Xu</span>, Wenjie Fan, Jan Madsen, Georgi Plamenov Tanev, Luca Pezzarossa
     </div>
     <div style="margin-top: 5px; font-size: 14px;">
       <span style="color: #b7410e;"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10136887" style="color: #b7410e; text-decoration: none;">Paper</a></span><br>
@@ -102,6 +101,7 @@ key: page-about
     </div>
   </div>
 </div>
+
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 30px; gap: 20px;">
   <!-- Fixed-size image box -->
